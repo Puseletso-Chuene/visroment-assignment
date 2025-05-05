@@ -12,7 +12,8 @@
 
 header {
   background-color: white;
-  position: fixed;
+  /* position: fixed; */
+  position: sticky;
   right: 0;
   top: 0;
   width: 100%;
@@ -31,6 +32,7 @@ header {
   justify-content: space-between;
   background: #ffffff;
   position: relative;
+  position: sticky;
 }
 header ul {
   display: flex;
@@ -312,9 +314,9 @@ footer {
     top: 70px;
     left: 0;
     right: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
-    background-color: #d8d8d8;
+    /* background-color: #d8d8d8; */
     gap: 0;
     overflow: hidden;
   }
@@ -327,6 +329,7 @@ footer {
   }
   #menuList {
     transition: all 0.5s;
+    -webkit-text-fill-color: transparent;
   }
   .home {
     background-size: cover;

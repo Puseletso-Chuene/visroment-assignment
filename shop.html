@@ -2,138 +2,161 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
     <title>SHOP</title>
+
+    <style></style>
   </head>
   <body>
-    <!-- THIS IS THE HEADER SECTION  -->
-
+    <!-- NAVBAR SECTION -->
     <header>
       <a href="index.html">
-        <img src="/images/logo2.jpg" alt="" />
+        <img
+          class="logo"
+          src="images/logo2.jpg"
+          width="110"
+          height="55"
+          alt=""
+        />
       </a>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contactus.html">Contact Us</a>
+
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li>
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
+    <!-- NAVBAR SECTION END  -->
 
-    <!-- HEADER SECTION END -->
+    <!-- ITEM FEATURE SECTION -->
 
- <!-- ITEM FEATURE SECTION -->
-
-  <section id="feature">
-    <div class="feature-container">
-      <h3>Our features</h3
-      <p>Here you can check out our products with fair pricing </p>
-    </div>
-    <div class="product-container">
-      <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-      <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-      <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-      <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-    </div>
-    <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product">
-        <img src="" alt="">
-        <h5 class="product-name">The Goal T-shirt</h5>
-        <h4 class="product-price">R450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-  </section> 
-
-  <!-- ITEM FEATURE SECTION END -->
-
-    <!-- FOOTER SECTION START -->
-    <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <img height="200px" src="/assets/logo2.jpg" alt="">
-            <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
+    <section id="feature">
+        <div class="feature-container">
+          <h3>Our features</h3
+          <p>Here you can check out our products with fair pricing </p>
+        </div>
+        <div class="product-container">
+          <div class="product">
+            <img src="images/backside.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
           </div>
-      
-          <div class="col mb-3">
-      
+          <div class="product">
+            <img src="images/white tee.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
           </div>
-          
-          <div class="col mb-3">
-            <h5>Quick Links</h5>
-            <ul class="nav flex-column" id="quicklinks">
-              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
-              <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-              <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
-            </ul>
+          <div class="product">
+            <img src="images/M&F.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
           </div>
-          
-          <div class="col mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Introduction</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
+          <div class="product">
+            <img src="images/fback.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
           </div>
-      
-          <div class="col mb-3" id="socials">
-            <h5>Socials</h5>
-            <ul class="nav flex-column" id="social">
-              <li class="nav-item mb-2"><a href="https://www.instagram.com/visroment?igsh=bjYxdTkxZm9xOWp3" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-instagram"></i></a></li>
-              <li class="nav-item mb-2"><a href="https://www.tiktok.com/@visroment7?_t=ZM-8vCIdh7bphd&_r=1" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-tiktok"></i></a></li>
-              <li class="nav-item mb-2"><a href="http://wa.me/+27607494949" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-whatsapp"></i></a></li>
-              <li class="nav-item mb-2"><a href="visroment48@gmail.com" class="nav-link p-0 text-body-secondary"><i class="fa-solid fa-inbox"></i></a></li>
-            </ul>
-          </div>
-        </footer>
+        </div>
+        <div class="product">
+            <img src="images/white tee 4.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product9.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/whitetee-firstlook.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product2.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product8.jpg" alt="">
+            <h5 class="product-name">The Goal T-shirt</h5>
+            <h4 class="product-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+      </section> 
   
-        <!-- FOOTER SECTION END -->
+      <!-- ITEM FEATURE SECTION END -->
+
+     <!-- FOOTER SECTION START -->
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <img height="200px" src="images/logo2.jpg" alt="">
+          <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
+        </div>
+    
+        
+        
+        <div class="col mb-3">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column" id="quicklinks">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        
+    <!-- SOCIAL MEDIA CONTACT -->
+        <div class="col mb-3" id="socials">
+          <h5>Socials</h5>
+          <ul class="nav flex-column" id="social">
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/visroment?igsh=bjYxdTkxZm9xOWp3" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item mb-2"><a href="https://www.tiktok.com/@visroment7?_t=ZM-8vCIdh7bphd&_r=1" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="nav-item mb-2"><a href="http://wa.me/+27607494949" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="nav-item mb-2"><a href="visroment48@gmail.com" class="nav-link p-0 text-body-secondary"><i class="fa-solid fa-inbox"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <!-- Icon toolkit from fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/830ca05872.js"
+      crossorigin="anonymous"
+    ></script> 
+
   </body>
 </html>
