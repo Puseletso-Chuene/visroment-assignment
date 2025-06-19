@@ -1,146 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
-    <title>SHOP</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <script src="https://kit.fontawesome.com/d8bf65372b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css ">
+    <title src >Shop</title>
 
-    <style></style>
-  </head>
-  <body>
-    <!-- NAVBAR SECTION -->
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          src="images/logo2.jpg"
-          width="110"
-          height="55"
-          alt=""
-        />
+    <style>
+        .product img{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #feature > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+            background-color: black;
+            border: none;
+        }
+
+        #feature > nav > ul > li.page-item.active > a{
+            background-color: black;}
+
+        #feature > div.row.mx-auto.container > nav > ul > li:nth-last-child(n):hover>a{
+            background-color: #a18e7f;
+            color:  #fff;
+        }
+
+        .pagination a {
+            color: black;
+        }
+        
+        .f{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+  <div class="container">
+
+    <a href="index.html">
+      <img id="logo" src="image/log1.jpg" alt="Visroment Logo">
+    </a>
+
+
+    <div class="d-flex align-items-center order-lg-2 gap-3">
+      <a href="cart.html" class="nav-link position-relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle "></span>
       </a>
 
-      <ul id="menuList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact</a></li>
-        <li>
-          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      
+      <a href="signup.html" class="nav-link">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa-solid fa-bars"></i></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_us.html">Contact us</a>
         </li>
       </ul>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
-    <!-- NAVBAR SECTION END  -->
+    </div>
+  </div>
+</nav>
 
-    <!-- ITEM FEATURE SECTION -->
-
-    <section id="feature">
-        <div class="feature-container">
-          <h3>Our features</h3
-          <p>Here you can check out our products with fair pricing </p>
+    <section id="feature" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+          <h2 class="font-weight-bold">Our features</h2>
+          <hr>
+          <p>Here you can check out our products with fair prices</p>
         </div>
-        <div class="product-container">
-          <div class="product">
-            <img src="images/backside.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='product.html'" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p11.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">Black "The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
             <button class="buy-btn">Buy Now</button>
           </div>
-          <div class="product">
-            <img src="images/white tee.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p87.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">White "The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
             <button class="buy-btn">Buy Now</button>
           </div>
-          <div class="product">
-            <img src="images/M&F.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p82.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">Black "The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
             <button class="buy-btn">Buy Now</button>
           </div>
-          <div class="product">
-            <img src="images/fback.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p7.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">'"The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p2.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">"The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p10.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">"The Goal" Tee</h5>
+            <h4 class="p-price">450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p5.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">"The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" loading="lazy" src="./image/product/p3.jpg" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="p-name">"The Goal" Tee</h5>
+            <h4 class="p-price">R450.00</h4>
             <button class="buy-btn">Buy Now</button>
           </div>
         </div>
-        <div class="product">
-            <img src="images/white tee 4.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
-            <button class="buy-btn">Buy Now</button>
         </div>
-        <div class="product">
-            <img src="images/product9.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-            <img src="images/whitetee-firstlook.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-            <img src="images/product2.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-            <img src="images/product8.jpg" alt="">
-            <h5 class="product-name">The Goal T-shirt</h5>
-            <h4 class="product-price">R450.00</h4>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-      </section> 
-  
-      <!-- ITEM FEATURE SECTION END -->
-
-     <!-- FOOTER SECTION START -->
+    </section>
+      
+      <!-- FOOTER SECTION START -->
     <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
           </a>
-          <img height="200px" src="images/logo2.jpg" alt="">
+          <img height="200px" src="/image/logo2.jpg" alt="">
           <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
         </div>
     
-        
+        <div class="col mb-3">
+    
+        </div>
         
         <div class="col mb-3">
           <h5>Quick Links</h5>
           <ul class="nav flex-column" id="quicklinks">
-            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
             <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
-            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-            <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Enquiry</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
           </ul>
         </div>
         
-        
-    <!-- SOCIAL MEDIA CONTACT -->
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Introduction</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
         <div class="col mb-3" id="socials">
           <h5>Socials</h5>
           <ul class="nav flex-column" id="social">
@@ -152,11 +250,9 @@
         </div>
       </footer>
 
-      <!-- Icon toolkit from fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/830ca05872.js"
-      crossorigin="anonymous"
-    ></script> 
-
-  </body>
-</html>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html> 

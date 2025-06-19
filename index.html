@@ -1,154 +1,163 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>VISROMENT</title>
-    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- NAVBAR SECTION -->
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          src="images/logo2.jpg"
-          width="110"
-          height="55"
-          alt=""
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <script src="https://kit.fontawesome.com/d8bf65372b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css ">
+    <title src >VISROMENT</title>
+</head>
+<body>
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+  <div class="container">
+
+    <a href="index.html">
+      <img id="logo" src="image/log1.jpg" alt="Visroment Logo">
+    </a>
+
+
+    <div class="d-flex align-items-center order-lg-2 gap-3">
+      <a href="cart.html" class="nav-link position-relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle "></span>
       </a>
+
       
-      <ul id="menuList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      <a href="signup.html" class="nav-link">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa-solid fa-bars"></i></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_us.html">Contact us</a>
+        </li>
       </ul>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
-    <!-- NAVBAR SECTION END  -->
+    </div>
+  </div>
+</nav>
 
-    <!-- HOME SECTION -->
-    <section class="home">
-      <div class="home-text">
-        <h1 style="color: #fff">WELCOME TO</h1>
-        <h1 style="color: #fe5e00" class="visroment">VISROMENT</h1>
-        <a href="shop.html"><button class="btn">SHOP NOW</button></a>
+    <section id="home">
+      <div class="container">
+        <h1>WELCOME <span> TO </span><br>VISROMENT </h1>
+        <a  href="shop.html"><button >SHOP NOW</button></a>
       </div>
     </section>
 
-    <!-- HOME SECTION END -->
+    <section id="new" class="w-100 p-0 m-0">
+      <div class="row p-0 m-0">
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" loading="lazy" src="./image/adds/A13.jpg" alt="">
 
-    <!-- BRIEF INTRODUCTION SECTION START -->
-
-    <section id="introduction">
-      <div class="welcome-container">
-        <h3 >Welcome to <span style="color: #fe5e00; font-weight: 700;">Visroment</span></h3>
-      </div>
-      <div class="introduction-img">
-        <img  src="images/white tee 3.jpg" alt="">
-      </div>
-      <div class="introduction-container">
-            <p>
-              We aren't about just fashion at Visroment. <br> It's not about the clothes, but the lifestyle. <br> 
-              It's about the resilience, ambition and self-expression through hard work and a unique journey. <br>
-              The apparel is designed for those who hustle, chase greatness and go above and beyond. <br> 
-              Each piece signifies the story of resilience and uniqueness- <br>
-              the high-quality craftsmanship is blended with a creative and bold artwork.
-            </p>
-      </div>
-    </section>
-     <!-- BRIEF INTRODUCTION SECTION END -->
-
-    <section id="new">
-      <div class="image-row">
-        <div class="image-container">
-          <img src="images/hero-img1.jpg" alt="">
           <div class="details">
-            <h2>THE GOAL</h2>
-            <h2>GRAPHIC TEE</h2>
-            <a href="shop.html"><button>SHOP NOW</button></a>
+            <a  href="shop.html"><button href="shop.html" class="text-uppercase">Shop now</button></a>
           </div>
         </div>
-        <div class="image-container">
-          <img src="images/hero-img2.jpg" alt="">
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" loading="lazy" src="./image/adds/A4.jpg" alt="">
           <div class="details">
-            <h2>THE GOAL</h2>
-            <h2>GRAPHIC TEE</h2>
-            <a href="shop.html"><button>SHOP NOW</button></a>
+            <a  href="shop.html"><button href="shop.html" class="text-uppercase">Shop now</button></a>
           </div>
+        </div>
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" loading="lazy" src="./image/adds/A11.jpg" alt="">
+          <div class="details">
+            <a  href="shop.html"><button href="shop.html" class="text-uppercase">Shop now</button></a>
+          </div>
+        </div>
       </div>
-      <div class="image-container">
-        <img src="images/white tee 2.jpg" alt="">
-        <div class="details">
-          <h2>THE GOAL</h2>
-          <h2>GRAPHIC TEE</h2>
-          <a href="shop.html"><button>SHOP NOW</button></a>
+    </section>    
+
+    <section id="feature" class="">
+      <div class="container text-center mt-5 py-5">
+        <h3>Our features</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our porducts with fair prices</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./image/product/p2.jpg" alt="">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h5 class="p-name">White "The Goal" Tee</h5>
+          <h4 class="p-price">R450.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./image/product/p3.jpg" alt="">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h5 class="p-name">Black "The Goal" Tee</h5>
+          <h4 class="p-price">R450.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./image/product/p87.jpg" alt="">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h5 class="p-name">White "The Goal" Tee</h5>
+          <h4 class="p-price">R450.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3" src="./image/product/p4.jpg" alt="">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h5 class="p-name">Black "The Goal" Tee</h5>
+          <h4 class="p-price">R450.00</h4>
+          <button class="buy-btn">Buy Now</button>
         </div>
       </div>
     </section>
 
-    <!-- ITEM FEATURE SECTION -->
-
-    <section id="feature">
-      <div class="feature-container">
-        <h3>Our features</h3
-        <p>Here you can check out our products with fair pricing </p>
+    <section id="banner" class="my-5 py-5">
+      <div class="container">
+        <a href="shop.html"><button class="text-uppercase">Shop Now</button></a>
       </div>
-      <div class="product-container">
-        <div class="product">
-          <img src="images/backside.jpg" alt="">
-          <h5 class="product-name">The Goal T-shirt</h5>
-          <h4 class="product-price">R450.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-          <img src="images/white tee.jpg" alt="">
-          <h5 class="product-name">The Goal T-shirt</h5>
-          <h4 class="product-price">R450.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-          <img src="images/M&F.jpg" alt="">
-          <h5 class="product-name">The Goal T-shirt</h5>
-          <h4 class="product-price">R450.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-        <div class="product">
-          <img src="images/fback.jpg" alt="">
-          <h5 class="product-name">The Goal T-shirt</h5>
-          <h4 class="product-price">R450.00</h4>
-          <button class="buy-btn">Buy Now</button>
-        </div>
-      </div>
-    </section> 
+    </section>   
 
-    <!-- ITEM FEATURE SECTION END -->
 
-    <!-- BANNER SECTION START -->
-
-    <section id="banner">
-      <div class="banner-container">
-        <a href="shop.html"><button class="text-uppercase">Show Now</button></a>
-      </div>
-    </section>
-
-    <!-- BANNER SECTION END -->
-
+    
     <!-- FOOTER SECTION START -->
     <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
@@ -156,7 +165,7 @@
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
           </a>
-          <img height="200px" src="images/logo2.jpg" alt="">
+          <img height="200px" src="/image/logo2.jpg" alt="">
           <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
         </div>
     
@@ -169,9 +178,9 @@
           <ul class="nav flex-column" id="quicklinks">
             <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
             <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
-            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Enquiry</a></li>
-            <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="About_us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Enquiry</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
           </ul>
         </div>
         
@@ -197,10 +206,9 @@
         </div>
       </footer>
 
-      <!-- FOOTER SECTION END -->
-
-      <script src="https://kit.fontawesome.com/830ca05872.js" crossorigin="anonymous"></script>
-
-    </div>
-  </body>
-</html>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html> 

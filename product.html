@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <script src="https://kit.fontawesome.com/d8bf65372b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css ">
+    <title src >Product Page</title>
+
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .btn{
+            background-color: #03346f;
+            opacity: 1;
+            transition: 0.3s ease;
+        }
+        .btn:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+  <div class="container">
+
+    <a href="index.html">
+      <img id="logo" src="image/log1.jpg" alt="Visroment Logo">
+    </a>
+
+
+    <div class="d-flex align-items-center order-lg-2 gap-3">
+      <a href="cart.html" class="nav-link position-relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <!-- <span id="cart-count" class="position-absolute top-0 start-100 translate-middle"></span> -->
+      </a>
+      <a href="signup.html" class="nav-link">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa-solid fa-bars"></i></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_us.html">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section class="sproduct my-5 pt-5 container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pd-1" loading="lazy" src="./image/4444.png" id="mainImg" alt="">       
+                
+                <div class="small-img-group d-flex flex-row">
+                    <div class="small-img-col">
+                        <img src="./image/m9.png" loading="lazy" width="100%" class="small-img w-100 pd-1"  alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./image/m11.png" loading="lazy" width="100%" class="small-img w-100 pd-1" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./image/m12.png" loading="lazy" width="100%" class="small-img w-100 pd-1" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./image/m10.png" loading="lazy" width="100%" class="small-img w-100 pd-1" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / T-Shirts</h6>
+                <h3 class="py-4">Men's Fashion T-Shirt</h3>
+                <h2>$139.00</h2>
+                <select class="my-4">
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <button class="btn">Add to Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <!-- <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore assumenda velit repellat rerum dolor tenetur quam, minima sint similique iusto incidunt sequi molestiae architecto ullam error sunt alias ratione, possimus molestias nam tempore aliquam non. Quis accusantium, saepe, voluptates deserunt et, dolores vitae facilis labore officia ipsam tempore eaque ex.</span> -->
+                 <span>This item is part of Visroment’s exclusive collection, crafted with premium materials for durability, comfort, and standout style. Each piece is designed to embody the spirit of ambition, resilience, and self-expression. Please review your selection carefully before proceeding to checkout.</span>
+            </div>
+        </div>
+    </section>
+
+    
+         <!-- FOOTER SECTION START -->
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <img height="200px" src="/image/logo2.jpg" alt="">
+          <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+        
+        <div class="col mb-3">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column" id="quicklinks">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+            <li class="nav-item mb-2"><a href="About_us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Enquiry</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Introduction</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3" id="socials">
+          <h5>Socials</h5>
+          <ul class="nav flex-column" id="social">
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/visroment?igsh=bjYxdTkxZm9xOWp3" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item mb-2"><a href="https://www.tiktok.com/@visroment7?_t=ZM-8vCIdh7bphd&_r=1" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="nav-item mb-2"><a href="http://wa.me/+27607494949" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="nav-item mb-2"><a href="visroment48@gmail.com" class="nav-link p-0 text-body-secondary"><i class="fa-solid fa-inbox"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+      var MainImg = document.getElementById('mainImg');
+      var smallimg = document.getElementsByClassName('small-img');
+
+      smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+      }
+      smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src;
+      }
+      smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src;
+      }
+      smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src;
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+          const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+          
+          if (selectedProduct) {
+              if (selectedProduct.category === 'Bag' || selectedProduct.category === 'Accessories') {
+                  const sizeSelect = document.querySelector('.sproduct select');
+                  if (sizeSelect) {
+                      sizeSelect.style.display = 'none';
+                  }
+              }
+          }
+      });
+
+      document.querySelector('.btn').addEventListener('click', function() {
+
+
+        const product = JSON.parse(localStorage.getItem('selectedProduct'));
+        const sizeSelect = document.querySelector('select');
+        const quantity = parseInt(document.querySelector('input[type="number"]').value);
+        const addButton = this;
+        
+        const isSizeRequired = !(product.category === 'Bag' || product.category === 'Accessories');
+        let size = isSizeRequired ? sizeSelect.value : "One Size";
+        if (isSizeRequired && size === 'Select Size') {
+            alert('Please select a size');
+            return;
+        }
+
+        const cartItem = {
+            name: product.name,
+            price: product.price,
+            size: size,
+            quantity: quantity,
+            image: product.mainImage
+        };
+
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        const existingItemIndex = cartItems.findIndex(item => 
+            item.name === cartItem.name && item.size === cartItem.size
+        );
+
+        if (existingItemIndex > -1) {
+            cartItems[existingItemIndex].quantity += quantity;
+        } else {
+            cartItems.push(cartItem);
+        }
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        updateCartCounter();
+
+        const originalText = addButton.textContent;
+        addButton.style.transition = 'all 0.5s ease';
+        addButton.textContent = 'Added!';
+        addButton.style.backgroundColor = '#28a745';
+        addButton.style.transform = 'scale(1.1)';
+
+        setTimeout(() => {
+            addButton.textContent = originalText;
+            addButton.style.backgroundColor = '#a18e7f';
+            addButton.style.transform = 'scale(1)';
+        }, 2000);
+    });
+    </script>
+</body>
+</html> 

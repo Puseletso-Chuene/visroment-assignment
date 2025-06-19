@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d8bf65372b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Policy</title>
+    <style>
+        .logo{
+            height: 60px;
+            margin-bottom: 80px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .policies{
+            margin: 100px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #policies{
+            width: 50%;
+            margin: 0 auto;
+            border: 2px solid #03346f;    
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .accept-button {
+            background: #03346f;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: block;
+            width: 200px;
+            margin: 20px auto 0;
+        }
+        
+        .accept-button:hover {
+            opacity: 0.9;
+        }
+        
+        #acceptance-confirmed {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+            display: none;
+        }
+        
+        .return-cart {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            #policies {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+  <div class="container">
+
+    <a href="index.html">
+      <img id="logo" src="image/log1.jpg" alt="Visroment Logo">
+    </a>
+
+
+    <div class="d-flex align-items-center order-lg-2 gap-3">
+      <a href="cart.html" class="nav-link position-relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle "></span>
+      </a>
+
+      
+      <a href="signup.html" class="nav-link">
+        <i class="fa-solid fa-user"></i>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa-solid fa-bars"></i></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_us.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_us.html">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="policies">
+        <img class="logo" src="image/logo3.png" alt="">
+        <div id="policies">
+            <h2>Ordering and Payment Policy</h2>
+            <hr class="mx-auto">
+            <p>At Visroment, we operate as an online business, utilizing a print-on-demand model.
+                This means that we don't hold stock of our products. Instead, we produce and ship
+                items only after an order has been placed.</p>
+        </div>
+        <div id="policies">
+            <h2>Payment Processing</h2>
+            <hr class="mx-auto">
+            <p>When you place an order with us, your payment is processed immediately. Please note
+                that it takes 3 to 5 business days to process and fulfil your order. Once your order has
+                been processed, you will receive a confirmation massage with an update on your order.
+                </p>
+        </div>
+        <div id="policies">
+            <h2>Delivery Policy</h2>
+            <hr class="mx-auto">
+            <p>We offer delivery services to customers. The delivery fee is calculated based on the
+                distance between our production facility and your shipping address. The delivery fee will
+                be displayed at checkout, before you complete your order.
+                </p>
+        </div>
+        <div id="policies">
+            <h2>Delivery Timeframes</h2>
+            <hr class="mx-auto">
+            <p>Please allow 3 to 5 business days for processing, plus the additional delivery time,
+                which varies depending on your location. We will provide you with tracking information
+                once your order has shipped, so you can stay up-to-date on the status of your delivery.</p>
+        </div>
+        <div id="policies">
+            <h2>Cancellation Policy</h2>
+            <hr class="mx-auto">
+            <p>Due to the print-on-demand nature of our business, we cannot guarantee cancellations
+                or changes to orders once they have been placed. However, we will do our best to
+                accommodate requests made within 24 hours of placing the order.
+                </p>
+        </div>
+        <div id="policies">
+            <h2>Refund Policy</h2>
+            <hr class="mx-auto">
+            <p>We strive to provide high-quality products and services. If you are not satisfied with your
+                order, please contact us within 30 days of delivery. We will work with you to resolve any
+                issues and provide a refund or replacement if necessary.</p>
+        </div>
+        <div id="policies">
+            <h2>Contact Us</h2>
+            <hr class="mx-auto">
+            <p>If you have any questions or concerns about our policies or your order, please don't
+                hesitate to contact us at visroment48@gmail.com and 0699149677. We're here to
+                help.</p>
+            <a href="Contact_us.html"><button>Contact Us</button></a>
+        </div>
+        <div id="policies">
+            <hr class="mx-auto">
+            <p>By placing an order with us, you acknowledge that you have read, understood, and
+                agreed to our policies.</p>
+            <button id="accept-policy" class="accept-button">Yes, I Accept</button>
+            <p id="acceptance-confirmed">Policy accepted! You can now proceed to checkout.</p>
+        </div>
+        <div class="return-cart">
+            <a href="cart.html"><button class="accept-button">Return to Cart</button></a>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION START -->
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <img height="200px" src="/image/logo2.jpg" alt="">
+          <p class="text-body-secondary">Developed by <a style="text-decoration: none; color: #fe5e00;" href="https://www.linkedin.com/in/puseletso-chuene-0840b8278/">Puseletso</a>&copy; 2025</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+        
+        <div class="col mb-3">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column" id="quicklinks">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+            <li class="nav-item mb-2"><a href="About_us.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Enquiry</a></li>
+            <li class="nav-item mb-2"><a href="Contact_us.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Introduction</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3" id="socials">
+          <h5>Socials</h5>
+          <ul class="nav flex-column" id="social">
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/visroment?igsh=bjYxdTkxZm9xOWp3" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="nav-item mb-2"><a href="https://www.tiktok.com/@visroment7?_t=ZM-8vCIdh7bphd&_r=1" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="nav-item mb-2"><a href="http://wa.me/+27607494949" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class="nav-item mb-2"><a href="visroment48@gmail.com" class="nav-link p-0 text-body-secondary"><i class="fa-solid fa-inbox"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const acceptButton = document.getElementById('accept-policy');
+            const confirmationMessage = document.getElementById('acceptance-confirmed');
+            
+            acceptButton.addEventListener('click', function() {
+                // Store acceptance in localStorage
+                localStorage.setItem('policyAccepted', 'true');
+                
+                // Show confirmation message
+                confirmationMessage.style.display = 'block';
+                
+                // Optional: Scroll to the confirmation message
+                confirmationMessage.scrollIntoView({behavior: 'smooth'});
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
