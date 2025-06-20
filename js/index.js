@@ -263,3 +263,19 @@ function addToCart(product, size, quantity) {
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   updateCartCounter();
 }
+
+document.getElementById("login-form").addEventListener("submit", function (e) {
+  const phone = document.querySelector('input[type="tel"]').value;
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit phone number.");
+    e.preventDefault();
+  }
+});
+document.getElementById("register-form").addEventListener("submit", function (e) {
+  const phone = document.querySelector('input[type="tel"]').value;
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Please enter a valid 10-digit phone number.");
+    e.preventDefault();
+  }
+});
+

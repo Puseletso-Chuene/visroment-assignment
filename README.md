@@ -1,36 +1,117 @@
-## Visroment Website Assignment (PoE)
-This repository displays the front-end source code and project documentation for the official website of **Visroment**, a fresh fashion brand created by Sivakele Molapo. 
-This project came to life as part of a Web Development assignment aimed at giving Visroment a solid online presence and unique digital identity
 
-## Project Overview
-- The goal of this website is to introduce Visroment’s brand identity to the online world, emphasize products, and boost customer interaction. 
-The site consists of a Homepage, About Us page, Product Catalog, and Contact page, all designed to reflect the brand’s vibe and style.
-- Other pages like a cart page, where you will be able to add and remove items/products along with your cart summary.
-- Payment page will be added 
+# Visroment Website Assignment (PoE)
 
-## Technologies used so far
-- **HTML5** - For creating the structure of the website
-- **CSS** - For styling the website
-- **Microsoft Visio** - To create a sitemap displaying the site’s navigation
-- **Git & GitHub** - For version control and collaboration
-- **Figma** - Wireframe creation
+This repository contains the front-end source code and project documentation for **Visroment**, a South African streetwear fashion brand created by Sivakele Molapo. The goal of this project is to give Visroment a strong digital presence, incorporating modern e-commerce functionality and SEO best practices as part of a Web Development PoE.
 
-## Project Planning 
-I prepared a detailed project proposal that was approved by the client. This proposal included:
-- The target audience and website objectives
-- Key performance indicators
-- Proposed features and functionalities
-- Design style and branding guide
-- Technical necessities
-- Budget, timeline, and hosting strategy
+---
 
-## Sitemap
-  A **sitemap** was drafted using Microsoft Visio to outline the site’s layout and information structure. This sitemap illustrates the connections between pages and supports a user-friendly navigation experience.
+## 🔍 Project Overview
 
-## Project status
-**STATUS** CSS addition
-        HTML structure completed 
+- The website promotes Visroment’s unique fashion identity, products, and brand story through a modern, interactive layout.
+- Pages include Homepage, About Us, Product Catalog, Contact Page, Enquiry Page, Sign Up/Sign In pages, and Cart functionality.
+- Key goals: increase brand visibility, drive engagement, enable product enquiries and purchases.
 
-**Phase** Starting CSS
+---
 
-**Domain Goal** Visroment.co.za
+## 🛠️ Technologies Used
+
+- **HTML5 & CSS3** – Website structure and styling
+- **JavaScript** – Interactivity, form validation, animations
+- **Firebase** – User Authentication & Form Submission Storage
+- **Bootstrap** – Responsive layout
+- **Microsoft Visio** – Sitemap creation
+- **Figma** – Wireframe design
+- **Git & GitHub** – Version control and collaboration
+- **Netlify** – Deployment
+- **SEO Tools** – Meta tags, robots.txt, sitemap.xml
+
+---
+
+## 📌 Functional Features
+
+- **Sign Up & Sign In** – Firebase Authentication allows users to securely create and manage accounts
+- **Cart System** – Add to cart, view cart, cart counter, local storage
+- **Forms** – Contact and Enquiry forms with client-side JS validation and visual feedback
+- **Animations** – Scroll-based animations using AOS
+- **External Embeds** – Google Maps and YouTube for external content
+- **Responsive Design** – Fully mobile-optimized using Bootstrap grid
+- **SEO Optimization**:
+  - Keyword-optimized content and alt text
+  - Meta tags and titles on all pages
+  - Internal linking structure
+  - Fast-loading images
+
+---
+
+## 📤 Firebase Functionality
+
+- Firebase Authentication (email & password)
+- Real-time signup/login handling
+- Firebase Firestore (future potential for contact/enquiry data storage)
+- Enhanced security via Firebase-hosted authentication
+
+---
+
+## 📋 Project Planning
+
+- A detailed project proposal was created and signed off by the client.
+- Included goals, target audience, KPIs, SEO strategy, features, timeline, and budget plan.
+
+---
+
+## 🗺️ Sitemap
+
+- Sitemap was created using **Microsoft Visio** to illustrate the website’s structure and flow.
+- This file visually maps out page interconnections and helped guide both the UI/UX and development.
+
+---
+
+## 🚀 Deployment Status
+
+**STATUS:** Final functionality and SEO implementation completed  
+**PHASE:** Final Touch-ups, Testing, and Submission  
+**LIVE LINK:** [https://visroment.netlify.app](https://visroment.netlify.app)  
+**Domain Goal:** visroment.co.za
+
+---
+
+## 🛠️ Firebase Setup (Included in Code)
+
+- Firebase initialized via `firebase-config.js`
+- Sign-up and login linked to Firebase Auth
+- JS functions handle authentication and error display
+
+---
+
+## 📑 Changelog (Recent Updates)
+
+- Integrated Firebase for sign-in/sign-up
+- Added meta tags for SEO (all pages)
+- Created robots.txt and sitemap.xml
+- Added animations with AOS.js
+- Optimized images for performance
+- Added enquiry.html and contact.html forms with validation
+
+---
+
+## 📂 Folder Structure
+
+- `/style/` → All CSS files
+- `/js/` → JavaScript logic and Firebase interactions
+- `/image/` → Optimized media assets
+- `/docs/` → Sitemap, proposal, changelog (where applicable)
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to Sivakele Molapo for providing Visroment’s branding material and creative direction. Special thanks to the instructors for guidance and support throughout the semester.
+
+---
+
+**Prepared by:** Puseletso Chuene  
+**Student Number:** ST10480252 
+**Institution:** IIE Rosebank College  
+**Module:** Web Development  
+**Year:** 2025
+
